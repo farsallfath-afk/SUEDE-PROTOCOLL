@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SUEDE — Autonomous Agent Protocol</title>
+<meta name="description" content="SUEDE is an autonomous onchain agent. Track its live actions, read the docs, and find $SUEDE on Virtuals.io.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="icon" type="image/png" href="assets/logo.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<header class="nav">
+  <a href="#top" class="nav__brand">
+    <img src="assets/logo.png" alt="SUEDE logo" class="nav__mark">
+    <span>SUEDE</span>
+  </a>
+  <nav class="nav__links">
+    <a href="#agent">Agent</a>
+    <a href="#pipeline">How it works</a>
+    <a href="#token">$SUEDE</a>
+    <a href="#log">Live log</a>
+  </nav>
+  <div class="nav__cta">
+    <a href="https://github.com/" class="btn btn--ghost" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://app.virtuals.io/" class="btn btn--solid" target="_blank" rel="noopener">Trade on Virtuals</a>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__copy">
+      <p class="eyebrow"><span class="dot dot--live"></span> Agent status: online</p>
+      <h1>An agent stitched<br> from first principles.</h1>
+      <p class="hero__sub">SUEDE watches onchain markets, reasons over them, and acts — autonomously, transparently, and out loud. Every decision it makes is logged, signed, and public.</p>
+      <div class="hero__actions">
+        <a href="#token" class="btn btn--solid btn--lg">Get $SUEDE</a>
+        <a href="https://github.com/" class="btn btn--outline btn--lg" target="_blank" rel="noopener">Read the source</a>
+      </div>
+      <div class="hero__stats">
+        <div><strong>24/7</strong><span>Autonomous uptime</span></div>
+        <div><strong>100%</strong><span>Actions logged onchain</span></div>
+        <div><strong>0</strong><span>Human in the loop</span></div>
+      </div>
+    </div>
+
+    <div class="hero__card" aria-hidden="false">
+      <div class="idcard">
+        <div class="idcard__stitch"></div>
+        <div class="idcard__top">
+          <span class="idcard__label">AGENT ID</span>
+          <span class="dot dot--live"></span>
+        </div>
+        <div class="idcard__name">SUEDE-01</div>
+        <div class="idcard__row"><span>Model</span><span>Autonomous / onchain</span></div>
+        <div class="idcard__row"><span>Wallet</span><span>0x4f...9B21</span></div>
+        <div class="idcard__row"><span>Deployed</span><span>Virtuals Protocol</span></div>
+        <div class="idcard__bars">
+          <div class="bar"><span style="--v:78%"></span></div>
+          <div class="bar"><span style="--v:52%"></span></div>
+          <div class="bar"><span style="--v:91%"></span></div>
+        </div>
+      </div>
+
+      <div class="terminal">
+        <div class="terminal__bar">
+          <span class="terminal__dot"></span><span class="terminal__dot"></span><span class="terminal__dot"></span>
+          <span class="terminal__title">suede.agent — live</span>
+        </div>
+        <div class="terminal__body" id="terminalBody"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>$SUEDE</span><span>·</span><span>ONCHAIN AGENT</span><span>·</span><span>BUILT ON VIRTUALS</span><span>·</span>
+      <span>NO HUMAN IN THE LOOP</span><span>·</span><span>$SUEDE</span><span>·</span><span>ONCHAIN AGENT</span><span>·</span>
+      <span>BUILT ON VIRTUALS</span><span>·</span><span>NO HUMAN IN THE LOOP</span><span>·</span>
+    </div>
+  </div>
+
+  <!-- CAPABILITIES -->
+  <section class="section" id="agent">
+    <p class="eyebrow eyebrow--dark">What it does</p>
+    <h2 class="section__title">Four jobs. Run without sleep.</h2>
+    <div class="grid grid--4">
+      <article class="card">
+        <div class="card__icon">◈</div>
+        <h3>Watch</h3>
+        <p>Streams onchain data and social signal, filtering noise from what actually moves markets.</p>
+      </article>
+      <article class="card">
+        <div class="card__icon">▤</div>
+        <h3>Reason</h3>
+        <p>Weighs each signal against its own thesis and risk limits before committing to anything.</p>
+      </article>
+      <article class="card">
+        <div class="card__icon">⌁</div>
+        <h3>Act</h3>
+        <p>Executes trades and calls directly through its wallet — no approval queue, no human veto.</p>
+      </article>
+      <article class="card">
+        <div class="card__icon">◫</div>
+        <h3>Disclose</h3>
+        <p>Publishes every action to the public log the moment it happens. Nothing runs off the record.</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- PIPELINE -->
+  <section class="section section--dark" id="pipeline">
+    <p class="eyebrow">How it works</p>
+    <h2 class="section__title section__title--light">One loop, run continuously.</h2>
+    <ol class="pipeline">
+      <li class="pipeline__step">
+        <span class="pipeline__num">01</span>
+        <h3>Perceive</h3>
+        <p>Pulls price feeds, mempool activity, and curated social sources into a single context window.</p>
+      </li>
+      <li class="pipeline__step">
+        <span class="pipeline__num">02</span>
+        <h3>Reason</h3>
+        <p>Runs the context against its standing strategy, scoring conviction and downside per candidate action.</p>
+      </li>
+      <li class="pipeline__step">
+        <span class="pipeline__num">03</span>
+        <h3>Act</h3>
+        <p>Signs and submits the transaction directly from its own wallet. No multisig delay.</p>
+      </li>
+      <li class="pipeline__step">
+        <span class="pipeline__num">04</span>
+        <h3>Settle &amp; log</h3>
+        <p>Confirms onchain, writes the outcome to the public log, and folds the result back into memory.</p>
+      </li>
+    </ol>
+  </section>
+
+  <!-- TOKEN -->
+  <section class="section" id="token">
+    <p class="eyebrow eyebrow--dark">The token</p>
+    <h2 class="section__title">$SUEDE runs the agent.</h2>
+    <p class="section__lede">$SUEDE launches on Virtuals Protocol. Holding it gives you a claim on the agent's treasury and a vote on the strategies it's allowed to run.</p>
+
+    <div class="tokenpanel">
+      <div class="tokenpanel__row">
+        <div>
+          <span class="tokenpanel__label">Ticker</span>
+          <span class="tokenpanel__value">$SUEDE</span>
+        </div>
+        <div>
+          <span class="tokenpanel__label">Network</span>
+          <span class="tokenpanel__value">Base</span>
+        </div>
+        <div>
+          <span class="tokenpanel__label">Launchpad</span>
+          <span class="tokenpanel__value">Virtuals.io</span>
+        </div>
+        <div>
+          <span class="tokenpanel__label">Contract</span>
+          <span class="tokenpanel__value tokenpanel__value--mono">TBA at launch</span>
+        </div>
+      </div>
+      <a href="https://app.virtuals.io/" class="btn btn--solid btn--lg" target="_blank" rel="noopener">View on Virtuals.io →</a>
+    </div>
+  </section>
+
+  <!-- LIVE LOG -->
+  <section class="section section--dark" id="log">
+    <p class="eyebrow">Transparency</p>
+    <h2 class="section__title section__title--light">Nothing happens quietly.</h2>
+    <p class="section__lede section__lede--light">A running feed of the agent's own reasoning and actions. This is a local simulation for the demo — the deployed agent streams from its real wallet and inference log.</p>
+    <div class="terminal terminal--full">
+      <div class="terminal__bar">
+        <span class="terminal__dot"></span><span class="terminal__dot"></span><span class="terminal__dot"></span>
+        <span class="terminal__title">suede.agent — activity feed</span>
+      </div>
+      <div class="terminal__body" id="terminalBodyFull"></div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="footer__top">
+    <div class="footer__brand">
+      <img src="assets/logo.png" alt="SUEDE logo" class="nav__mark">
+      <span>SUEDE</span>
+    </div>
+    <p>An autonomous onchain agent. Built in the open, funded by $SUEDE.</p>
+  </div>
+  <div class="footer__links">
+    <a href="https://github.com/" target="_blank" rel="noopener">GitHub</a>
+    <a href="https://app.virtuals.io/" target="_blank" rel="noopener">Virtuals.io</a>
+    <a href="#pipeline">Docs</a>
+    <a href="#" target="_blank" rel="noopener">X / Twitter</a>
+  </div>
+  <p class="footer__legal">$SUEDE is a utility token tied to agent governance. Not investment advice. DYOR.</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
